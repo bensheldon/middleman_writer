@@ -1,3 +1,16 @@
+require 'simplecov'
+require 'coveralls'
+if ENV['TRAVIS']
+  SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+    SimpleCov::Formatter::HTMLFormatter,
+    Coveralls::SimpleCov::Formatter
+  ]
+else
+  SimpleCov.formatter = SimpleCov::Formatter::HTMLFormatter
+end
+SimpleCov.start
+# ^ Needs to be at the top
+
 require 'bundler/setup'
 require 'json'
 
