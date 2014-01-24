@@ -1,7 +1,3 @@
-require "codeclimate-test-reporter"
-CodeClimate::TestReporter.start
-# ^ Must go first: https://codeclimate.com/repos/52e2cff26956803493005536/coverage_setup
-
 require 'bundler/setup'
 require 'json'
 
