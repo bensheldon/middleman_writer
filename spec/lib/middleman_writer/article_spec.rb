@@ -45,7 +45,6 @@ describe MiddlemanWriter::Article do
     end
 
     it "has the frontmatter of the input string" do
-      frontmatter =
       expect(article_from_string.frontmatter['title']).to eq "Article One"
     end
 

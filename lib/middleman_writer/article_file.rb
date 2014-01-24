@@ -18,6 +18,14 @@ module MiddlemanWriter
       self.path = options.fetch(:path)
     end
 
+    def self.load_file(path)
+      pathname = Pathname(path)
+
+      file_contents = pathname.open('rb').read
+      article = Article.from_string(file_contents)
+      new(article, path: pathname)
+    end
+
     def self.load(path, match="*.html*")
       pathname = Pathname(path)
 
@@ -27,15 +35,12 @@ module MiddlemanWriter
         pathname.each_child.select do |pn|
           pn.file? && pn.fnmatch?(match)
         end.each do |pn|
-          article = Article.from_string(pn.open 'rb')
-          puts article.inspect
-          article_files << new(article, path: pn)
+          article_files << load_file(pn)
         end
 
         article_files
       elsif pathname.file?
-        article = Article.from_string(pathname.open 'rb')
-        new(article, path: pathname)
+        load_file(pathname)
       else
         nil
       end
