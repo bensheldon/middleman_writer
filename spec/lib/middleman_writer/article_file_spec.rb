@@ -1,6 +1,32 @@
 require 'spec_helper'
 
 describe MiddlemanWriter::ArticleFile do
+  let(:file) { MiddlemanWriter::ArticleFile.load_file fixture('article_one.html.markdown') }
+
+  describe "#frontmatter" do
+    it "delegates to @article" do
+      expect(file.frontmatter).to eq(file.frontmatter)
+    end
+
+    it "is modifiable as a hash" do
+      file.frontmatter['title'] = "update title"
+      expect(file.article.frontmatter['title']).to eq "update title"
+    end
+  end
+
+  describe "#content" do
+    it "delegates to @article" do
+      file.content = "update content"
+      expect(file.article.content).to eq "update content"
+    end
+  end
+
+  describe "#content=" do
+    it "delegates to @article" do
+      file.content = "update content"
+      expect(file.article.content).to eq "update content"
+    end
+  end
 
   describe '.load_file' do
     it "loads an ArticleFile from a path" do

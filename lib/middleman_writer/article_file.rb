@@ -6,7 +6,10 @@ module MiddlemanWriter
 
     attr_accessor :path
     attr_reader :article
-    def_delegator :@article, :content, :frontmatter
+    def_instance_delegators :@article,
+      :content,
+      :content=,
+      :frontmatter
 
     def initialize(article=nil, options={})
       if article
