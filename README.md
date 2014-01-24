@@ -1,5 +1,7 @@
 # MiddlemanWriter
 
+[![Build Status](https://travis-ci.org/bensheldon/middleman_writer.png?branch=master)](https://travis-ci.org/bensheldon/middleman_writer)
+
 TODO: Write a gem description
 
 ## Installation
