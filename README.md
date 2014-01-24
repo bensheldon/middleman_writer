@@ -1,6 +1,7 @@
 # MiddlemanWriter
 
 [![Build Status](https://travis-ci.org/bensheldon/middleman_writer.png?branch=master)](https://travis-ci.org/bensheldon/middleman_writer)
+[![Code Climate](https://codeclimate.com/repos/52e2cff26956803493005536/badges/ac707c8e503eda7752e3/gpa.png)](https://codeclimate.com/repos/52e2cff26956803493005536/feed)
 
 TODO: Write a gem description
 
