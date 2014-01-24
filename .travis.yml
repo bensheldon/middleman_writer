@@ -2,6 +2,8 @@ rvm:
   - 1.9.3
   - 2.1.0
   - ruby-head
+env:
+  - CODECLIMATE_REPO_TOKEN=f1669d6a79f5fc97f113c1d49f46d7c7cd1626eeecfbb57a038114feae984f51
 matrix:
   allow_failures:
     - rvm: ruby-head
