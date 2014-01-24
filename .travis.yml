@@ -2,7 +2,6 @@ rvm:
   - 1.9.3
   - 2.1.0
   - ruby-head
-  - rbx
 matrix:
   allow_failures:
     - rvm: ruby-head
