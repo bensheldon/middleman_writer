@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/bensheldon/middleman_writer.png?branch=master)](https://travis-ci.org/bensheldon/middleman_writer)
 [![Code Climate](https://codeclimate.com/github/bensheldon/middleman_writer.png)](https://codeclimate.com/github/bensheldon/middleman_writer)
 [![Coverage Status](https://coveralls.io/repos/bensheldon/middleman_writer/badge.png)](https://coveralls.io/r/bensheldon/middleman_writer)
+[![Dependency Status](https://gemnasium.com/bensheldon/middleman_writer.png)](https://gemnasium.com/bensheldon/middleman_writer)
 
 TODO: Write a gem description
 
